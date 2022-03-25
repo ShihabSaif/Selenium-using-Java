@@ -1,5 +1,6 @@
 package com.inetbanking.testcases;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -16,7 +17,10 @@ public class TC001_login extends BaseClass {
 		
 		loginPage lp = new loginPage(driver);
 		lp.setUserName(username);
+		logger.info("username entered");
+		
 		lp.setPassword(password);
+		logger.info("password entered");
 		
 		lp.clickLogin();
 		
@@ -24,10 +28,12 @@ public class TC001_login extends BaseClass {
 		if(text.equals("Welcome To Manager's Page of GTPL Bank"))
 		{
 			Assert.assertTrue(true);
+			logger.info("test passed");
 		}
 		
 		else {
 			Assert.assertTrue(false);
+			logger.info("test failed");
 		} 
 		
 	}
