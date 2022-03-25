@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class loginPage {
 	WebDriver ldriver;
 	
-	loginPage(WebDriver rdriver)
+	public loginPage(WebDriver rdriver)
 	{
 		ldriver = rdriver;
 		PageFactory.initElements(rdriver, this);
@@ -20,7 +20,7 @@ public class loginPage {
 	@FindBy(name="password")
 	WebElement txtpassword;
 	
-	@FindBy(name="btnlogin")
+	@FindBy(name="btnLogin")
 	WebElement btnlogin;
 	
 	public void setUserName(String name)
