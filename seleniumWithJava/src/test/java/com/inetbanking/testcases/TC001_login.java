@@ -1,5 +1,7 @@
 package com.inetbanking.testcases;
 
+import java.io.IOException;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -12,7 +14,7 @@ import com.inetbanking.pageObjects.loginPage;
 public class TC001_login extends BaseClass {
 	
 	@Test
-	public void loginTest() {		
+	public void loginTest() throws IOException {		
 		loginPage lp = new loginPage(driver);
 		lp.setUserName(username);
 		logger.info("username entered");
@@ -30,6 +32,7 @@ public class TC001_login extends BaseClass {
 		}
 		
 		else {
+			captureScreen(driver, "loginTest");
 			Assert.assertTrue(false);
 			logger.info("test failed");
 		} 
