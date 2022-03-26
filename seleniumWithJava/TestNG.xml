@@ -2,6 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="seleniumWithJava">
+
+	<listeners>
+		<listener class-name = "com.inetbanking.utilities.Reporting"/>
+	</listeners>
+
 	<test name = "banking app test">
 		<parameter name = "Browser" value = "chrome" />
 		<classes>
