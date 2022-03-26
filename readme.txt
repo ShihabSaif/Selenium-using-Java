@@ -8,3 +8,5 @@
 (6) Reading common values from properties file
 (7) Running test cases on desired browser
 (8) Adding extent report
+(9) Creating data driven test cases
+(10) Adding new test cases
