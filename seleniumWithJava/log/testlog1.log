@@ -4,3 +4,6 @@
 2022-03-25 22:47:38,807 [main] INFO ebanking - username entered
 2022-03-25 22:47:38,952 [main] INFO ebanking - password entered
 2022-03-25 22:47:40,442 [main] INFO ebanking - Welcome To Manager's Page of GTPL Bank
+2022-03-26 15:11:51,025 [main] INFO ebanking - username entered
+2022-03-26 15:11:51,157 [main] INFO ebanking - password entered
+2022-03-26 15:11:52,662 [main] INFO ebanking - test passed
