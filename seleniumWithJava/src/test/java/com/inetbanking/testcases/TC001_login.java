@@ -12,9 +12,7 @@ import com.inetbanking.pageObjects.loginPage;
 public class TC001_login extends BaseClass {
 	
 	@Test
-	public void loginTest() {
-		driver.get(baseURL);
-		
+	public void loginTest() {		
 		loginPage lp = new loginPage(driver);
 		lp.setUserName(username);
 		logger.info("username entered");

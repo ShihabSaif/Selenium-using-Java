@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="seleniumWithJava">
+	<test name = "banking app test">
+		<parameter name = "Browser" value = "chrome" />
+		<classes>
+			<class name = "com.inetbanking.testcases.TC001_login"></class>
+		</classes>
+	</test>
+</suite>
+
