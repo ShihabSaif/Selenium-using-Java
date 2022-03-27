@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-27T00:53:58 BDT" name="seleniumWithJava" finished-at="2022-03-27T00:54:14 BDT" duration-ms="16524">
+  <suite started-at="2022-03-27T14:09:18 BDT" name="seleniumWithJava" finished-at="2022-03-27T14:10:22 BDT" duration-ms="63792">
     <groups>
     </groups>
-    <test started-at="2022-03-27T00:53:58 BDT" name="banking app test" finished-at="2022-03-27T00:54:14 BDT" duration-ms="16524">
-      <class name="com.inetbanking.testcases.TC001_login">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testcases.TC001_login@7fa98a66]" started-at="2022-03-27T00:53:59 BDT" name="setup" finished-at="2022-03-27T00:54:11 BDT" duration-ms="11572" status="PASS">
+    <test started-at="2022-03-27T14:09:18 BDT" name="banking app test" finished-at="2022-03-27T14:10:22 BDT" duration-ms="63792">
+      <class name="com.inetbanking.testcases.TC_LoginDDT_002">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testcases.TC_LoginDDT_002@4567f35d]" started-at="2022-03-27T14:09:19 BDT" name="setup" finished-at="2022-03-27T14:09:41 BDT" duration-ms="22559" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,18 +18,58 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:com.inetbanking.testcases.TC001_login@7fa98a66]" started-at="2022-03-27T00:54:11 BDT" name="loginTest" finished-at="2022-03-27T00:54:14 BDT" duration-ms="3050" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
+        <test-method signature="loginDDT(java.lang.String,java.lang.String)[pri:0, instance:com.inetbanking.testcases.TC_LoginDDT_002@4567f35d]" started-at="2022-03-27T14:09:48 BDT" name="loginDDT" data-provider="LoginData" finished-at="2022-03-27T14:09:55 BDT" duration-ms="6587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr394861]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bYbEsuq]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDDT -->
+        <test-method signature="loginDDT(java.lang.String,java.lang.String)[pri:0, instance:com.inetbanking.testcases.TC_LoginDDT_002@4567f35d]" started-at="2022-03-27T14:09:55 BDT" name="loginDDT" data-provider="LoginData" finished-at="2022-03-27T14:09:58 BDT" duration-ms="3390" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr394861]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bYbEsuq]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDDT -->
+        <test-method signature="loginDDT(java.lang.String,java.lang.String)[pri:0, instance:com.inetbanking.testcases.TC_LoginDDT_002@4567f35d]" started-at="2022-03-27T14:09:58 BDT" name="loginDDT" data-provider="LoginData" finished-at="2022-03-27T14:10:00 BDT" duration-ms="2143" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr137319]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bAdYvyb]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at com.inetbanking.testcases.TC001_login.loginTest(TC001_login.java:36)
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertTrue(Assert.java:27)
+at com.inetbanking.testcases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -60,15 +100,159 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetbanking.testcases.TC001_login@7fa98a66]" started-at="2022-03-27T00:54:14 BDT" name="tearDown" finished-at="2022-03-27T00:54:14 BDT" duration-ms="526" status="PASS">
+        </test-method> <!-- loginDDT -->
+        <test-method signature="loginDDT(java.lang.String,java.lang.String)[pri:0, instance:com.inetbanking.testcases.TC_LoginDDT_002@4567f35d]" started-at="2022-03-27T14:10:00 BDT" name="loginDDT" data-provider="LoginData" finished-at="2022-03-27T14:10:19 BDT" duration-ms="18703" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr164225]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jahetAp]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[3]/div/ul/li[10]/a"}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'SHIHAB', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [91defe4fd718ae880e41efc0500c3a9c, findElement {using=xpath, value=/html/body/div[3]/div/ul/li[10]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\ABM~1.SHI\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:4897}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:4897/devtool..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 91defe4fd718ae880e41efc0500c3a9c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[3]/div/ul/li[10]/a"}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'SHIHAB', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [91defe4fd718ae880e41efc0500c3a9c, findElement {using=xpath, value=/html/body/div[3]/div/ul/li[10]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\ABM~1.SHI\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:4897}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:4897/devtool..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 91defe4fd718ae880e41efc0500c3a9c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at com.inetbanking.pageObjects.loginPage.clickLogout(loginPage.java:48)
+at com.inetbanking.testcases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDDT -->
+        <test-method signature="loginDDT(java.lang.String,java.lang.String)[pri:0, instance:com.inetbanking.testcases.TC_LoginDDT_002@4567f35d]" started-at="2022-03-27T14:10:19 BDT" name="loginDDT" data-provider="LoginData" finished-at="2022-03-27T14:10:21 BDT" duration-ms="2132" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr112909]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tytUreg]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertTrue(Assert.java:27)
+at com.inetbanking.testcases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDDT -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetbanking.testcases.TC_LoginDDT_002@4567f35d]" started-at="2022-03-27T14:10:21 BDT" name="tearDown" finished-at="2022-03-27T14:10:22 BDT" duration-ms="515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.inetbanking.testcases.TC001_login -->
+      </class> <!-- com.inetbanking.testcases.TC_LoginDDT_002 -->
     </test> <!-- banking app test -->
   </suite> <!-- seleniumWithJava -->
 </testng-results>

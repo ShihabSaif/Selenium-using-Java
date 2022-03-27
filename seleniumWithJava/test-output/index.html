@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,10 +104,39 @@
                     <div class="method-list-content failed suite-seleniumWithJava">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-seleniumWithJava" title="com.inetbanking.testcases.TC001_login" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-seleniumWithJava" title="com.inetbanking.testcases.TC_LoginDDT_002" class="method navigator-link" hash-for-method="loginDDT(mngr164225, jahetAp)">loginDDT(mngr164225, jahetAp)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-seleniumWithJava" title="com.inetbanking.testcases.TC_LoginDDT_002" class="method navigator-link" hash-for-method="loginDDT(mngr112909, tytUreg)">loginDDT(mngr112909, tytUreg)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-seleniumWithJava" title="com.inetbanking.testcases.TC_LoginDDT_002" class="method navigator-link" hash-for-method="loginDDT(mngr137319, bAdYvyb)">loginDDT(mngr137319, bAdYvyb)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-seleniumWithJava -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-seleniumWithJava" class="hide-methods passed suite-seleniumWithJava"> (hide)</a> <!-- hide-methods passed suite-seleniumWithJava -->
+                      <a href="#" panel-name="suite-seleniumWithJava" class="show-methods passed suite-seleniumWithJava"> (show)</a> <!-- show-methods passed suite-seleniumWithJava -->
+                    </span>
+                    <div class="method-list-content passed suite-seleniumWithJava">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-seleniumWithJava" title="com.inetbanking.testcases.TC_LoginDDT_002" class="method navigator-link" hash-for-method="loginDDT(mngr394861, bYbEsuq)">loginDDT(mngr394861, bYbEsuq)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-seleniumWithJava" title="com.inetbanking.testcases.TC_LoginDDT_002" class="method navigator-link" hash-for-method="loginDDT(mngr394861, bYbEsuq)">loginDDT(mngr394861, bYbEsuq)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-seleniumWithJava -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,23 +151,103 @@
           <div class="suite-seleniumWithJava-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.inetbanking.testcases.TC001_login</span>
+              <span class="class-name">com.inetbanking.testcases.TC_LoginDDT_002</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.inetbanking.testcases.TC001_login.loginTest(TC001_login.java:36)
+                  <a name="loginDDT(mngr164225, jahetAp)">
+                  </a> <!-- loginDDT(mngr164225, jahetAp) -->
+                  <span class="method-name">loginDDT</span>
+                  <span class="parameters">(mngr164225, jahetAp)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[3]/div/ul/li[10]/a&quot;}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;SHIHAB&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [91defe4fd718ae880e41efc0500c3a9c, findElement {using=xpath, value=/html/body/div[3]/div/ul/li[10]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\ABM~1.SHI\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:4897}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:4897/devtool..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 91defe4fd718ae880e41efc0500c3a9c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at com.inetbanking.pageObjects.loginPage.clickLogout(loginPage.java:48)
+	at com.inetbanking.testcases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:38)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginDDT(mngr112909, tytUreg)">
+                  </a> <!-- loginDDT(mngr112909, tytUreg) -->
+                  <span class="method-name">loginDDT</span>
+                  <span class="parameters">(mngr112909, tytUreg)</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at com.inetbanking.testcases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginDDT(mngr137319, bAdYvyb)">
+                  </a> <!-- loginDDT(mngr137319, bAdYvyb) -->
+                  <span class="method-name">loginDDT</span>
+                  <span class="parameters">(mngr137319, bAdYvyb)</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at com.inetbanking.testcases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-seleniumWithJava-class-failed -->
+          <div class="suite-seleniumWithJava-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.inetbanking.testcases.TC_LoginDDT_002</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginDDT(mngr394861, bYbEsuq)">
+                  </a> <!-- loginDDT(mngr394861, bYbEsuq) -->
+                  <span class="method-name">loginDDT</span>
+                  <span class="parameters">(mngr394861, bYbEsuq)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginDDT(mngr394861, bYbEsuq)">
+                  </a> <!-- loginDDT(mngr394861, bYbEsuq) -->
+                  <span class="method-name">loginDDT</span>
+                  <span class="parameters">(mngr394861, bYbEsuq)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-seleniumWithJava-class-passed -->
         </div> <!-- panel seleniumWithJava -->
         <div panel-name="test-xml-seleniumWithJava" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -155,7 +264,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;banking app test&quot;&gt;
     &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.inetbanking.testcases.TC001_login&quot;/&gt;
+      &lt;class name=&quot;com.inetbanking.testcases.TC_LoginDDT_002&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- banking app test --&gt;
 &lt;/suite&gt; &lt;!-- seleniumWithJava --&gt;
@@ -195,16 +304,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'com.inetbanking.testcases.TC001_login')
-data.setCell(0, 3, 3050);
+data.setCell(0, 1, 'loginDDT')
+data.setCell(0, 2, 'com.inetbanking.testcases.TC_LoginDDT_002')
+data.setCell(0, 3, 18703);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginDDT')
+data.setCell(1, 2, 'com.inetbanking.testcases.TC_LoginDDT_002')
+data.setCell(1, 3, 6587);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginDDT')
+data.setCell(2, 2, 'com.inetbanking.testcases.TC_LoginDDT_002')
+data.setCell(2, 3, 3390);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginDDT')
+data.setCell(3, 2, 'com.inetbanking.testcases.TC_LoginDDT_002')
+data.setCell(3, 3, 2143);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginDDT')
+data.setCell(4, 2, 'com.inetbanking.testcases.TC_LoginDDT_002')
+data.setCell(4, 3, 2132);
 window.suiteTableData['seleniumWithJava']= { tableData: data, tableDiv: 'times-div-seleniumWithJava'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-seleniumWithJava">
               </div> <!-- times-div-seleniumWithJava -->
             </div> <!-- times-div -->
@@ -230,20 +355,40 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.inetbanking.testcases.TC001_login</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.inetbanking.testcases.TC_LoginDDT_002</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <span class="method-name">loginDDT(mngr394861, bYbEsuq)</span>
+                <span class="method-start">29222 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginDDT(mngr394861, bYbEsuq)</span>
+                <span class="method-start">36044 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">loginTest</span>
-                <span class="method-start">11580 ms</span>
+                <span class="method-name">loginDDT(mngr137319, bAdYvyb)</span>
+                <span class="method-start">39435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginDDT(mngr164225, jahetAp)</span>
+                <span class="method-start">41583 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginDDT(mngr112909, tytUreg)</span>
+                <span class="method-start">60290 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14768 ms</span>
+                <span class="method-start">62444 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
