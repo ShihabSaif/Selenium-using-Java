@@ -7,13 +7,13 @@
   <test thread-count="5" name="banking app test(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="com.inetbanking.testcases.TC_LoginDDT_002">
+      <class name="com.inetbanking.testcases.TC_AddCustomerTest_003">
         <methods>
           <include name="setup"/>
-          <include name="loginDDT" invocation-numbers="2 3 4"/>
+          <include name="addNewCustomer"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.inetbanking.testcases.TC_LoginDDT_002 -->
+      </class> <!-- com.inetbanking.testcases.TC_AddCustomerTest_003 -->
     </classes>
   </test> <!-- banking app test(failed) -->
 </suite> <!-- Failed suite [seleniumWithJava] -->
